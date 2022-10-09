@@ -1,24 +1,219 @@
+/* «C1» Nie ma stylów globalnych dla elementów innych niż <body>.
+
+«C2» Do stylizacji służą selektory klasy.
+
+«C3» W stylach nie ma !important.
+
+«C4» Elementy interaktywne (przyciski i linki) po najechaniu myszką lub focusie z klawiatury mają stan aktywny wskazany w układzie (zmiana koloru).
+
+«С5» Tekst kontaktów w nagłówku i stopce zmienia kolor po najechaniu kursorem i focusie.
+
+«C6» Do przechowywania palety kolorów układu (tekst, tło, zaznaczenie) używane są zmienne CSS.
+
+«С7» Element <body> ma właściwość font-family z dominującą czcionką Roboto w układzie.
+
+«С8» Alternatywne opcje czcionek i typ rodziny (bezszeryfowa) są określone na końcu wyliczenia font-family dla elementu <body>.
+
+«С9» Rodzina czcionek Roboto jest wyraźnie określona tylko dla elementu <body>, pozostałe elementy go dziedziczą.
+
+«С10» Element <body> ma właściwość color z dominującym w układzie kolorem tekstu. Reszta tekstu dziedziczy lub zastępuje tę wartość.
+
+«С11» Rozmiar czcionki (właściwość font-size) wszystkich elementów tekstowych dokładnie odpowiada wartościom z układu.
+
+«С12» Wysokość wiersza (właściwość line-height) wszystkich elementów tekstowych dokładnie odpowiada wartościom z układu i jest określona jako mnożnik, a nie w px.
+
+«С13» Kolor (właściwość color) wszystkich elementów tekstowych dokładnie odpowiada wartościom z układu.
+
+«С14» Waga czcionki (właściwość font-weight) wszystkich elementów tekstowych dokładnie odpowiada wartościom z układu.
+
+«С15» Waga czcionki (właściwość font-weight) jest wyraźnie określona tylko wtedy, gdy wartość w układzie różni się od domyślnej dla tego elementu w przeglądarce.
+
+«С16» Przyciski mają określoną właściwość cursor z wartością pointer.
+
+«С17» W stylach nie powtarza się domyślnych wartości właściwości ustawionych przez przeglądarkę. Na przykład, linki nie muszą mieć cursor: pointer, akapity nie muszą mieć font-style: normal lub font-weight: 400. */
 :root {
-    --main-color: #E5E5E5;
+    --main-color: #FFFFFF;
     --second-color: #2F303A;
     --point-color: #2196F3;
-    --text-color: #212121;
-    --second-text-color: rgb(255, 255, 255);
+    --main-text-color: #212121;
+    --second-text-color: #FFFFFF;
     --third-text-color: #757575;
-    --forth-text-color: rgba(255, 255, 255, 0.6);
+    --fourth-text-color: rgba(255, 255, 255, 0.6);
     --button-color: #F5F4FA;
+    --third-color: #F5F4FA;
 }
 body {
     font-family: 'Roboto' , 'Raleway' , sans-serif;
-    color: var(--text-color);
-    font-size: 14px;
-    line-height: 1.71;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+}
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+}
+.menu, .contacts {
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.17;
     font-weight: 500;
 }
-address {
+.menu a, .contacts a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+.menu a:hover, 
+.contacts a:hover, 
+.menu a:focus, 
+.contacts a:focus {
+    color: var(--point-color);
+}
+.contacts a {
+    color: var(--third-text-color);
+}
+.heading {
+    font-size: 44px;
+    line-height: 1.36;
+    background-color: var(--second-color);
+    color: var(--second-text-color);
+    font-weight: 900;
+}
+.heading button {
+    background-color: var(--point-color);
+    color: var(--second-text-color);
+    border: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 700;
+    cursor: pointer;
+}
+.assets .assets-list {
+    list-style: none;
+}
+.asset-1 h4,
+.asset-2 h4,
+.asset-3 h4,
+.asset-4 h4 {
+    font-size: 14px;
+    line-height: 1.17;
+    font-weight: 700;
+}
+.asset-1 p,
+.asset-2 p,
+.asset-3 p,
+.asset-4 p {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--third-text-color);
+    font-weight: 400;
+}
+.work h2 {
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+}
+.work-list {
+    list-style: none;
+}
+.team {
+    background-color: var(--third-color);
+}
+.team h2 {
+    font-size: 36px;
+    list-style: 1.17;
+    font-weight: 700;
+}
+.team-staff {
+    list-style: none;
+}
+.team-card-1,
+.team-card-2,
+.team-card-3,
+.team-card-4 {
+    background-color: var(--main-color);
+    font-size: 16px;
+    line-height: 1.17;
+    font-weight: 500;
+}
+.team-card-1 p, 
+.team-card-2 p,
+.team-card-3 p,
+.team-card-4 p {
+    color: var(--third-text-color);
+    font-weight: 400;
+}
+.addres {
+    background-color: var(--second-color);
+    list-style: none;
+    color: var(--main-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+.addres address {
     font-style: normal;
 }
-.heading h1 {
+.mail a,
+.phone a {
+    text-decoration: none;
+    color: var(--fourth-text-color)
+}
+.mail a:hover,
+.mail a:focus,
+.phone a:hover,
+.phone a:focus {
+    color: var(--point-color);
+}
+.filters,
+.project-list {
+    list-style: none;
+}
+.filters button {
+    font-family: 'Roboto';
+    background-color: var(--button-color);
+    border: none;
+    font-size: 16px;
+    line-height: 1.62;
+    font-weight: 500;
+    cursor: pointer;
+}
+.filters button:focus, 
+.filters button:hover {
+    color: var(--main-color);
+    background-color: var(--point-color);
+}
+.project-1 h3,
+.project-2 h3,
+.project-3 h3,
+.project-4 h3,
+.project-5 h3,
+.project-6 h3,
+.project-7 h3,
+.project-8 h3,
+.project-9 h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+}
+.project-1 p,
+.project-2 p,
+.project-3 p,
+.project-4 p,
+.project-5 p,
+.project-6 p,
+.project-7 p,
+.project-8 p,
+.project-9 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+}
+/* address {
+    font-style: normal;
+} */
+/* .heading h1 {
     font-size: 44px;
     line-height: 1.36;
     font-weight: 900;
@@ -42,28 +237,26 @@ address {
     font-size: 16px;
     line-height: 1.17;
 }
-.heading_4 li {
-    background-color: var(--second-text-color);
-}
 .heading_4 p {
     font-size: 16px;
     line-height: 1.17;
     font-weight: 400;
     color: var(--third-text-color);
 }
-ul {
+/* ul {
     list-style-type: none;
-}
-.logo {
+} */
+/* .logo {
     font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
-}
-a {
+    text-decoration: none;
+} */
+/* a {
     color: var(--text-color);
     text-decoration: none;
-}
-a:hover {
+} */
+/* a:hover {
     color: var(--point-color);
 }
 a:focus {
@@ -75,9 +268,6 @@ footer {
 }
 footer li> a {
     color: var(--forth-text-color);
-}
-main {
-    background-color: var(--second-text-color);
 }
 .heading {
     background-color: var(--second-color);
@@ -101,8 +291,7 @@ button {
     line-height: 1.875;
 }
 .filters button {
-    background-color: var(--button-color);
-    
+    background-color: var(--button-color);    
 }
 button:hover,
 button:focus {
@@ -118,7 +307,4 @@ button:focus {
     font-size: 16px;
     line-height: 1.875;
     font-weight: 400;
-}
-.portfolio {
-    background-color: var(--second-text-color);
-}
+} */
