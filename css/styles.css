@@ -59,7 +59,8 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
-.heading button:hover {
+.heading button:hover,
+.heading button:focus {
     background-color: var(--main-color);
     color: var(--point-color);
 }
