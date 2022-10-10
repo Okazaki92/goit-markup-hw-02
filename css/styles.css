@@ -59,6 +59,10 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
+.heading button:hover {
+    background-color: var(--main-color);
+    color: var(--point-color);
+}
 .assets .assets-list {
     list-style: none;
 }
