@@ -95,6 +95,8 @@ body {
 }
 .team-card {
     background-color: var(--main-color);
+}
+.team-card h3 {
     font-size: 16px;
     line-height: 1.17;
     font-weight: 500;
