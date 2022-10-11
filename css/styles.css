@@ -70,18 +70,15 @@ body {
 .asset h4 {
     font-size: 14px;
     line-height: 1.17;
-    font-weight: 700;
 }
 .asset p {
     font-size: 14px;
     line-height: 1.71;
     color: var(--third-text-color);
-    font-weight: 400;
 }
 .work h2 {
     font-size: 36px;
     line-height: 1.17;
-    font-weight: 700;
 }
 .work-list {
     list-style: none;
@@ -92,7 +89,6 @@ body {
 .team h2 {
     font-size: 36px;
     line-height: 1.17;
-    font-weight: 700;
 }
 .team-staff {
     list-style: none;
@@ -105,7 +101,6 @@ body {
 }
 .team-card p {
     color: var(--third-text-color);
-    font-weight: 400;
 }
 .addres {
     background-color: var(--second-color);
@@ -148,11 +143,9 @@ body {
 }
 .project h3 {
     font-size: 18px;
-    font-weight: 700;
     line-height: 2;
 }
 .project p {
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.88;
 }
