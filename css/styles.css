@@ -67,18 +67,12 @@ body {
 .assets .assets-list {
     list-style: none;
 }
-.asset-1 h4,
-.asset-2 h4,
-.asset-3 h4,
-.asset-4 h4 {
+.asset h4 {
     font-size: 14px;
     line-height: 1.17;
     font-weight: 700;
 }
-.asset-1 p,
-.asset-2 p,
-.asset-3 p,
-.asset-4 p {
+.asset p {
     font-size: 14px;
     line-height: 1.71;
     color: var(--third-text-color);
@@ -103,19 +97,13 @@ body {
 .team-staff {
     list-style: none;
 }
-.team-card-1,
-.team-card-2,
-.team-card-3,
-.team-card-4 {
+.team-card {
     background-color: var(--main-color);
     font-size: 16px;
     line-height: 1.17;
     font-weight: 500;
 }
-.team-card-1 p, 
-.team-card-2 p,
-.team-card-3 p,
-.team-card-4 p {
+.team-card p {
     color: var(--third-text-color);
     font-weight: 400;
 }
@@ -158,28 +146,12 @@ body {
     color: var(--main-color);
     background-color: var(--point-color);
 }
-.project-1 h3,
-.project-2 h3,
-.project-3 h3,
-.project-4 h3,
-.project-5 h3,
-.project-6 h3,
-.project-7 h3,
-.project-8 h3,
-.project-9 h3 {
+.project h3 {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
 }
-.project-1 p,
-.project-2 p,
-.project-3 p,
-.project-4 p,
-.project-5 p,
-.project-6 p,
-.project-7 p,
-.project-8 p,
-.project-9 p {
+.project p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.88;
